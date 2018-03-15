@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vgcc.MainActivity">
+
+    <Button
+        android:id="@+id/Button_CompletedGames"
+        android:layout_width="400px"
+        android:layout_height="100dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="16dp"
+        android:text="Completed games"
+        android:onClick="To_Completed_Games"
+        app:layout_constraintBottom_toTopOf="@+id/Button_BackloggedGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_BackloggedGames"
+        android:layout_width="400px"
+        android:layout_height="100dp"
+        android:layout_marginBottom="35dp"
+        android:text="Backlogged games"
+        android:onClick="To_Backlogged_Games"
+        app:layout_constraintBottom_toTopOf="@+id/Button_WishlistedGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_CompletedGames" />
+
+    <Button
+        android:id="@+id/Button_WishlistedGames"
+        android:layout_width="400px"
+        android:layout_height="100dp"
+        android:layout_marginBottom="56dp"
+        android:text="Wishlisted games"
+        android:onClick="To_Wishlisted_Games"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_BackloggedGames" />
+
+</android.support.constraint.ConstraintLayout>

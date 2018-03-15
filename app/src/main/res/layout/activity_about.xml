@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vgcc.AboutActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Video Game Completion Companion, v 0.2.
+
+This app is designed for those of us that want to be able to compile a complete list of video games that they have completed over their time.
+
+As the app progresses, extra features are planned. These include:
+-A wishlist tracking games that you wish to play
+-A backlog that includes games that you own, but have not played or want to play more of
+-Extensive library of games to automatically search through in addition to manual input
+
+This app is also in beta: expect a few bugs and rough ends."
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
+</android.support.constraint.ConstraintLayout>
