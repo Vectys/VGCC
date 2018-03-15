@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+//main page activity. contains buttons to go to wishlisted games, backlogged games, and completed games.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.mainmenu, menu);
         return true;
     }
-
+    //creating an options menu that goes back, or to the about page.
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.menu_BackButton:
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+     //functions to go to various pages
     }
     public void To_Completed_Games(View view){
         Intent completed_games = new Intent(MainActivity.this, Completed_Activity.class);
