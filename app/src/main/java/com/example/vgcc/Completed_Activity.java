@@ -6,13 +6,22 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class Completed_Activity extends AppCompatActivity {
-
+    ListView games_list;
+    ArrayAdapter<String> listAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_completed_);
+        games_list = (ListView) findViewById(R.id.completed_games_list);
+        ArrayList<String> GameList = new ArrayList<String>();
+
+
     }
     public boolean onCreateOptionsMenu(Menu menu){//options menu; displays an about page and a back button
         MenuInflater inflater = getMenuInflater();
